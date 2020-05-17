@@ -1,7 +1,13 @@
+@font-face
 *{
     font-family: 微軟正黑體;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
-    color:red
+    color:burlywood
+  }
+  nav{
+    padding: 10px;
+    grid-template-columns: 30% 70%;
+    display: grid;
   }
