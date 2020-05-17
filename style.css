@@ -1,13 +1,41 @@
-@font-face
-*{
-    font-family: 微軟正黑體;
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    color:burlywood
-  }
-  nav{
-    padding: 10px;
-    grid-template-columns: 30% 70%;
-    display: grid;
-  }
+@font-face {
+  font-family: Naggn;
+  src: url(./font/I.Ngaan.ttf)
+}
+
+* {
+  font-family: 微軟正黑體;
+  padding: 3px;
+  margin: 3px;
+  box-sizing: border-box;
+  color: burlywood
+}
+
+nav {
+  padding: 10px;
+  grid-template-columns: 30% 70%;
+  display: grid;
+}
+
+#logo span {
+  font-family: Naggn;
+  src: url(./font/I.Ngaan.ttf) ;
+  font-size:36px;
+  font: wight 900;
+}
+#nav{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  align-items: center;
+  text-align: center;
+}
+#nav a{
+  text-decoration: none;
+  color:cadetblue;
+  font-size: 15px;
+  transition: 0.2s;
+}
+#nav a:hover{
+  color:black;
+  font-size: 25px;
+}
