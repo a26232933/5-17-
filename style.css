@@ -15,6 +15,7 @@ nav {
   padding: 10px;
   grid-template-columns: 30% 70%;
   display: grid;
+  
 }
 
 #logo span {
@@ -38,4 +39,8 @@ nav {
 #nav a:hover{
   color:black;
   font-size: 25px;
+}
+#banner{background-image: url(./img/photo-1558985212-324add95595a.jpg);
+  height: 800px;
+  
 }
