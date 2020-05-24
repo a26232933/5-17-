@@ -5,42 +5,154 @@
 
 * {
   font-family: 微軟正黑體;
-  padding: 3px;
-  margin: 3px;
+  padding: 0px;
+  margin: 0px;
   box-sizing: border-box;
-  color: burlywood
+  color: black;
 }
 
 nav {
   padding: 10px;
   grid-template-columns: 30% 70%;
   display: grid;
-  
+  position: fixed;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  top: 0%;
+
+
 }
 
 #logo span {
   font-family: Naggn;
-  src: url(./font/I.Ngaan.ttf) ;
-  font-size:36px;
+  src: url(./font/I.Ngaan.ttf);
+  font-size: 36px;
   font: wight 900;
+  margin-left: 100px;
 }
-#nav{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
+
+#nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   text-align: center;
+
 }
-#nav a{
+
+#nav a {
   text-decoration: none;
-  color:cadetblue;
-  font-size: 15px;
+  color: cadetblue;
+  font-size: 20px;
   transition: 0.2s;
 }
-#nav a:hover{
-  color:black;
+
+#nav a:hover {
+  color: black;
   font-size: 25px;
 }
-#banner{background-image: url(./img/photo-1558985212-324add95595a.jpg);
-  height: 800px;
-  
+
+#banner {
+  background-image: url(./img/photo-1558985212-324add95595a.jpg);
+  /* 背景大小:填滿 */
+  background-position: cover;
+  background-position: center;
+  /* vh螢幕高度 100=100% */
+  height: 100vh;
+  display: grid;
+  color: white;
+  align-items: center;
+  text-align: center;
+
+}
+
+#banner div {
+  width: 800px;
+  margin: 0 auto;
+}
+
+#banner div h1,
+#banner div h4 {
+  font-family: Naggn;
+  color: palevioletred;
+}
+
+#banner div h1 {
+  font-size: 120px;
+}
+
+#banner div h4 {
+  font-size: 30px;
+  text-align: left;
+}
+
+section {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#about>div {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-gap: 20px;
+
+}
+
+#about>div .img {
+  background-image: url(./img/udon-photo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+#about div p {
+  letter-spacing: 5px;
+  line-height: 2;
+  padding-right: 20px;
+}
+
+section h1 {
+  font-family: Naggn;
+  margin-top: 60px;
+  font-size: 32px;
+}
+
+section hr {
+  margin-bottom: 40px;
+}
+
+/* 最新消息 */
+#news ul {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  /*樣式清單:無 */
+  list-style: none;
+}
+
+#news ul span {
+  font-size: 12px;
+  color: gray;
+  padding: 20px 0;
+}
+
+#news ul li {
+  font-size: 18px;
+  padding: 20px 0;
+}
+
+#news div {
+  text-align: right;
+}
+
+#news a {
+  text-decoration: none;
+  color: #252525;
+}
+
+#contact p {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 2.5;
+  letter-spacing: 3px;
 }
